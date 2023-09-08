@@ -1,0 +1,279 @@
+@font-face {
+    font-family: popins;
+    src: url(fonts/Poppins-Medium.ttf);
+    font-family: dancingscripts;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+body *{
+    padding: 0;
+    margin: 0;
+}
+.adder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+
+    background-color: #d0cbcb;
+    width: 70%;
+    min-height: 10vh;
+    margin: 0 auto;
+    padding: 2rem ;
+    border: 1px solid transparent;
+    border-radius: 0.9rem;
+    box-sizing: border-box;
+
+    font-family: popins,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(85, 80, 123);
+    border: 2px solid rgba(211, 201, 188, 0.784);
+    box-shadow: 0 0 2px 0px rgba(139, 135, 131, 0.848);
+}
+body > h1 {
+    margin-block-start: 3.5rem;
+    margin-inline-start: 10rem;
+    margin: 3.5rem 10rem 1rem;
+    font-family: dancingscripts, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    border: 4px solid black;
+    box-shadow: 0 0 8px 1px black;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+section h1 {
+    font-size: 2rem;
+}
+.card {
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    background-color: rgba(207, 216, 227, 0.627);
+    padding: 1rem 2rem;
+    font-family: dancingscripts, popins,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    box-shadow: 0 0 5px 1px rgb(142, 123, 123);
+}
+.addbook {
+    margin-top: 1rem;
+    width: 105px;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    background-color: bisque(144, 148, 196);
+    font-family: dancingscripts, popins,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+form {
+    display: grid;
+    gap: 0.4rem;
+    background-color: rgb(232, 232, 233);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    min-height: fit-content;
+    padding: 1rem;
+    min-width: 12rem;
+    box-shadow: 0 0 5px 0 ;   
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    border: 4px dashed black;
+    margin-inline-start: 18vw;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.form-holder {
+    padding-block-start: 5vh;
+    box-sizing: border-box;
+    top: 1px;
+    right: 1px;
+    width: 100%;
+    height: 100vh;
+    background-color: #4a484882;
+    position: absolute;
+    animation: appear 1s ease 1 alternate;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    display: none;
+}
+.add-form {
+    display: flex;
+}
+form > button {
+    width: 100px;
+    justify-self: center;
+}
+form  input {
+    border: 1px solid rgba(143, 130, 238, 0.423);
+    border-radius: 0.38rem;
+    height: 1.29rem;
+    padding: 0.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    margin-top: 1rem;
+    width: 105px;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    background-color: rgb(207, 169, 118);
+    font-family: popins,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 5px 1px rgb(145, 120, 120);
+}
+.library-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min(230px));
+    grid-template-rows: repeat(1, 250px);
+    gap: 0.8rem;
+    width: 80%;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    min-height: 2rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(217, 216, 215);
+}
+h2 { 
+    padding: 4px 8px;
+    font: 2rem dancingscripts;
+    border: 4px solid black;
+    display: inline-block;
+}
+.two {
+   margin-block: 1.5rem 0.5rem; 
+   width: 80%;
+   margin-inline: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.clear {
+    margin-top: 1rem;
+    width: 105px;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    background-color: rgb(154, 155, 154);
+    font-family: popins,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 1px 1px rgb(169, 120, 120);
+    color: white;
+}
+.checkbox {
+    display: flex;
+    gap: 0.5rem;
+}
+.green {
+    display: block;
+    width: fit-content;
+    color: white;
+    background-color: green;
+    padding: 0.15rem 1.5rem;
+    border-radius: 0.2rem;
+    font-family: popins ,Georgia, 'Times New Roman', Times, serif;
+    margin-block-start: 4px;
+}
+.red {
+    background-color: red;
+}
+@media (max-width: 920px) {
+    form {
+        font-size: 2.1rem;
+    }
+    .library-wrapper {
+        justify-content: center;
+        gap: 2rem;
+        box-sizing: border-box;
+        width: 90%;
+        padding-top: 2rem;
+        padding-left: 0;
+    }
+    .card {
+        width: 80%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    form input {
+        height: 1.9rem;
+        font-size: 1.4rem;
+    }
+    body > h1 {
+        margin: 4rem;
+    }
+    .adder {
+        width: 80%;
+        padding: 1.3rem;
+    }
+    .two {
+        margin-block-start: 4rem;
+    }
+    .icon {
+        margin-inline-start: 50vw;
+    }
+}
+@media (max-width: 550px)
+ {
+    body > h1 {
+        margin: 1.5rem;
+        min-width: fit-content;
+    }
+    .adder {
+        width: 90%;
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+    form {
+        font-size: 1.5rem;
+    }
+    .library-wrapper {
+        margin-block-start: 1rem;
+        min-height: 40vh;
+    }
+    .two {
+        margin-block-start: 4rem;
+    }
+}
+@media (max-width: 320px)
+ {
+    body > h1 {
+        margin: 1rem;
+        min-width: fit-content;
+        font-size: 1.4rem;
+    }
+    .adder {
+        width: 90%;
+        padding: 0.8rem;
+    }
+    form {
+        font-size: 0.9rem;
+        width: 10rem;
+    }
+    form input {
+        font-size: 0.9rem;
+    }
+    .icon {
+        margin-inline-start: 70vw;
+    }
+    .library-wrapper {
+        margin-block-start: 1rem;
+        min-height: 40vh;
+    }
+    .two {
+        margin-block-start: 3rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}

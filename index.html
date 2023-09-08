@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>        
+    <h1>Build your library</h1>
+    <section class="adder">
+        <section>
+            <h1>Add book to library</h1>
+            <button type="button" class="addbook" id="get-form">ADD Book<button>            
+        </section>
+        <section class="form-holder">
+            <img src="Icons/cross.png" alt="" class="icon">
+            <form action="" method="post">
+                <h3>Add the Book</h3>
+                <div>            
+                    <label for="condition">title:</label>
+                    <input type="text" name="day" id="book" placeholder="reason for life" required />
+                </div>
+                <div>
+                    <label for="condition">author:</label>
+                    <input type="text" name="day" id="author" placeholder="Rick warren" required /> 
+                </div>
+                <div>
+                    <label for="condition">number of pages:</label>
+                    <input type="number" name="day" id="numOfPages" placeholder="2000" required />
+                </div>
+                <section class="checkbox">
+                    <label for="condition">read</label>
+                    <input type="checkbox" name="day" id="checkbox" required />
+                </section>
+                <button type="button" id="check" class="addbook">ADD</button>
+        </form>
+        </section>
+        
+    </section>
+    <section class="two">
+        <h2>Books shelf</h2>
+        <button type="button" class="clear">Clear shelf</button>
+    </section>
+    <section class="library-wrapper"></section>
+</body>
+
+</html>
