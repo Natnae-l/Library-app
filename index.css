@@ -245,6 +245,16 @@ h2 {
         margin-block-start: 4rem;
     }
 }
+@media (max-width: 415px) {
+    .icon {
+        margin-inline-start: 70vw;
+    }
+}
+@media (max-width: 415px) {
+    .icon {
+        margin-inline-start: 83vw;
+    }
+}
 @media (max-width: 320px)
  {
     body > h1 {
