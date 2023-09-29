@@ -48,9 +48,9 @@ section h1 {
     border-radius: 1rem;
     background-color: rgba(207, 216, 227, 0.627);
     padding: 1rem 2rem;
-    font-family: dancingscripts, popins,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: popins,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2rem;
-    box-shadow: 0 0 5px 1px rgb(142, 123, 123);
+    box-shadow: 0 0 2.5px 1px rgb(142, 123, 123);
 }
 .addbook {
     margin-top: 1rem;
